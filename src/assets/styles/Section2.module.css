@@ -1,0 +1,28 @@
+.tablet{
+    margin: 30px 350px;
+}
+.calculater{
+    position: absolute;
+    right:150px;
+    top: 110%;
+}
+.search{
+    position: relative;
+    right: 220px;
+    bottom: 250px;
+}
+.chat{
+    position: relative;
+    right: 350px;
+    bottom: 150px;
+}
+.managment{
+    position: relative;
+    right: 500px;
+    bottom: 250px;
+}
+.app{
+    position: relative;
+    right: 400px;
+    bottom: 500px;
+}

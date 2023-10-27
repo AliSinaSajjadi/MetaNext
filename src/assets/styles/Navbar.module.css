@@ -1,0 +1,117 @@
+@font-face {
+    font-family: FontName;
+    src: url('../fonts/vazir-font-v18.0.0/Vazir-Medium.eot');
+    src: url('../fonts/vazir-font-v18.0.0/Vazir-Medium.woff2') format('../fonts/vazir-font-v18.0.0/Vazir-Medium.eotFontName-opentype'),
+         url('../fonts/vazir-font-v18.0.0/Vazir-Medium.woff') format('woff'),
+         url('../fonts/vazir-font-v18.0.0/Vazir-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+.container{
+    justify-content: center;
+    font-size: FontName;
+    display: flex;
+    margin :30px;
+    width: 1440px;
+    height: 134px;
+    flex-shrink: 0;
+    
+}
+.list{
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 42px;}
+.list li{
+    font-family: PeydaWeb;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    list-style: none;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.list :hover{
+    color: #0CA0A2;
+}
+.logo{
+    display: flex;
+    width: 160px;
+    gap: 12px;
+    margin-left: 42px;
+    
+ 
+}
+.logo h2 {
+    color: #000;
+
+    text-align: right;
+    font-family: Peyda;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.logo p {
+    color: #7E8AAB ;
+    text-align: right;
+    font-family: Peyda;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%;
+    width: 150px;
+}
+.logoImage{
+    display: flex;
+    flex-direction: column;
+    width: 50.042px;
+    height: 54.714px;
+    
+}
+.demo{
+    background-color: #0CA0A2 ;
+    box-shadow: 0px 14px 24px 0px rgba(12, 160, 162, 0.27);
+    border-radius: 10px;
+    display: flex;
+    width: 90px;
+    height: 32px;
+    padding: 17px 31px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin:0px 15px;
+}
+.demo h3{
+    font-family: Peyda;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #FFF;
+    text-align: center;
+    
+}
+.language{
+    display: flex;
+    width: 24px;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    gap: 12px;
+    margin-right: 50px;
+    margin-top: 15px;
+}
+.dial{
+    display: flex;
+    width: 147px;
+    justify-content: flex-end;
+    height: 54px;
+    gap: 12px;
+    margin-right: 42px;
+    
+}

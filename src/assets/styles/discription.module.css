@@ -1,0 +1,78 @@
+.container{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.container h3{
+    color: #626E94;
+
+/* Heading/H 5 */
+font-size: 26px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.container h3 span{
+    color: black;
+}
+.container h1{
+    color: var(--Black, #000);
+text-align: center;
+
+/* Heading/H1 */
+font-size: 46px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+margin: 40px auto;
+}
+.container p{
+    width: 1000px;
+    color: #7B7F8C;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 40px;
+}
+.button{
+    width: 257px;
+    height: 67px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #011627;
+    
+
+    }
+    .button p{
+        display: flex;
+        position: relative;
+        top: 15px;
+        color: aliceblue ;
+        display: inline;
+        text-align: center;
+        /* button/button-sm */
+        font-family: Peyda;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        
+    }
+    .button img{
+        position: relative;
+        top: 21px;
+        right: 10px;
+    }
+    .buttonContainer{
+        margin-top: 100px;
+        display: flex;
+    }
+    .vector{
+        margin: 0 20px ;
+    }
+    .buttonContainer :nth-child(3){
+        transform: rotate(180deg);
+    }
