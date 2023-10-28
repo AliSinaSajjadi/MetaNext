@@ -8,7 +8,7 @@ import "./assets/styles/App.css"
 import Section2 from './assets/components/section2';
 const App = () => {
   return (
-    <div>
+    <div className="body">
       <Navbar/>
       <Discription/>
       <Section2/>

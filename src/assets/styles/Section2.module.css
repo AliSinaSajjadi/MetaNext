@@ -3,8 +3,8 @@
 }
 .calculater{
     position: absolute;
-    right:150px;
-    top: 110%;
+    right:230px;
+    bottom: -100px;
 }
 .search{
     position: relative;

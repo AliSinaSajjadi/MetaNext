@@ -1,4 +1,13 @@
+@font-face {
+    font-family: "PeydaWeb SemBd";
+    src: "../Font/PeydaWeb-Regular (1).woff2";}
+
 *{
     margin : 0 ;
     padding : 0
+}
+.body{
+    width: 1440px;
+    margin: auto;
+    font-family: "PeydaWeb SemBd";
 }
