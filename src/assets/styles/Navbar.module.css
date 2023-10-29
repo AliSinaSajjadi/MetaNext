@@ -13,10 +13,12 @@
     justify-content: center;
     font-size: FontName;
     display: flex;
-    margin :30px;
-    width: 1440px;
+    margin :auto;
+    width: 1200px;
     height: 134px;
     flex-shrink: 0;
+
+
     
 }
 .list{

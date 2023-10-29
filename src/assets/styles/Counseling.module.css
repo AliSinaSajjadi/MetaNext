@@ -1,0 +1,48 @@
+.info {
+    background-color: #f4f8fc;
+    border-radius: 20px;
+    height: 671px;
+    left: 0;
+    top: 0;
+    width: 644px;
+}
+
+.title {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.title p {
+    color: var(--text-color-secondary-text-color, #626E94);
+    text-align: right;
+    /* body/body xs */
+    font-family: Peyda;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.title h3 {
+    color: #000;
+
+    text-align: right;
+    font-family: PeydaWeb;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 15px;
+}
+
+.title h3 span {
+    color: var(--primary-color-primary-color, #0CA0A2);
+    font-family: PeydaWeb;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.title img{
+    width: 40px;
+}

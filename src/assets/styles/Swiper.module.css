@@ -1,0 +1,26 @@
+.container {
+    margin: 120px;
+}
+
+.container p {
+    color: #626E94;
+    text-align: right;
+    font-family: PeydaWeb;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 31.6px;
+
+}
+.title {
+    color: var(--Black, #000);
+    text-align: right;
+    font-family: PeydaWeb;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.options{
+    display: flex;
+}

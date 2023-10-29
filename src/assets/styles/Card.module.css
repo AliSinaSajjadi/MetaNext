@@ -1,0 +1,236 @@
+.box {
+    height: 718px;
+    width: 553px;
+    margin:200px auto;
+  }
+  
+  .box .group {
+    height: 718px;
+    left: 0;
+    top: 0;
+    width: 557px;
+  }
+  
+  .box .overlapgroup {
+    height: 718px;
+    position: relative;
+    width: 553px;
+  }
+  
+  .box .rectangle {
+    background-color: #0ca0a2;
+    border-radius: 70px;
+    height: 678px;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 553px;
+  }
+  
+  .box .maskgroup {
+    height: 718px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 553px;
+  }
+  
+  .box .textwrapper {
+    color: #ffffff;
+    direction: rtl;
+    font-family: "Peyda-ExtraBold", Helvetica;
+    font-size: 46px;
+    font-weight: 800;
+    left: 85px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: left;
+    top: 74px;
+  }
+  
+  .box .img {
+    height: 20px;
+    left: 131px;
+    position: absolute;
+    top: 165px;
+    width: 291px;
+  }
+  
+  .box .group2 {
+    height: 17px;
+    left: 456px;
+    position: absolute;
+    top: 77px;
+    width: 27px;
+  }
+  
+  .box .div {
+    color: #ffffff;
+    direction: rtl;
+    font-family: "Peyda-Regular", Helvetica;
+    font-size: 19px;
+    font-weight: 400;
+    left: 47px;
+    letter-spacing: 0;
+    line-height: 41px;
+    position: absolute;
+    text-align: center;
+    top: 210px;
+    width: 460px;
+  }
+  .frame1 {
+    align-items: center;
+    background-color: #ffffffb2;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    height: 50.04px;
+    justify-content: center;
+    padding: 33px 32px;
+    position: relative;
+    width: 283.67px;
+    bottom: 575px;
+    left: 300px;
+  }
+  
+  .frame1 .textwrapper1 {
+    color: #000000;
+    direction: rtl;
+    font-family: "PeydaWeb-Bold", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: -15.67px;
+    position: relative;
+    text-align: center;
+    width: fit-content;
+  }
+  
+  .frame1 .img1 {
+    height: 81px;
+    margin-bottom: -17.98px;
+    margin-right: -15.67px;
+    margin-top: -17.98px;
+    position: relative;
+    width: 80px;
+  }
+
+  .frame2 {
+    align-items: center;
+    background-color: #ffffffb2;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    height: 50.04px;
+    justify-content: center;
+    padding: 33px 32px;
+    position: relative;
+    width: 283.67px;
+    bottom: 850px;
+    right: 400px;
+  }
+  
+  .frame2 .textwrapper2 {
+    color: #000000;
+    direction: rtl;
+    font-family: "PeydaWeb-Bold", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: -15.67px;
+    position: relative;
+    text-align: center;
+    width: fit-content;
+  }
+  
+  .frame2 .img2 {
+    height: 81px;
+    margin-bottom: -17.98px;
+    margin-right: -15.67px;
+    margin-top: -17.98px;
+    position: relative;
+    width: 80px;
+  }
+  
+  .frame3 {
+    align-items: center;
+    background-color: #ffffffb2;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    height: 50.04px;
+    justify-content: center;
+    padding: 33px 32px;
+    position: relative;
+    width: 283.67px;
+    bottom: 600px;
+    left: 300px;
+  }
+  
+  .frame3 .textwrapper3 {
+    color: #000000;
+    direction: rtl;
+    font-family: "PeydaWeb-Bold", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: -15.67px;
+    position: relative;
+    text-align: center;
+    width: fit-content;
+  }
+  
+  .frame3 .img3 {
+    height: 81px;
+    margin-bottom: -17.98px;
+    margin-right: -15.67px;
+    margin-top: -17.98px;
+    position: relative;
+    width: 80px;
+  }
+  .frame4 {
+    align-items: center;
+    background-color: #ffffffb2;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    height: 50.04px;
+    justify-content: center;
+    padding: 33px 32px;
+    position: relative;
+    width: 283.67px;
+    bottom: 650px;
+    right: 500px;
+  }
+  
+  .frame4 .textwrapper4 {
+    color: #000000;
+    direction: rtl;
+    font-family: "PeydaWeb-Bold", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: -15.67px;
+    position: relative;
+    text-align: center;
+    width: fit-content;
+  }
+  
+  .frame4 .img4 {
+    height: 81px;
+    margin-bottom: -17.98px;
+    margin-right: -15.67px;
+    margin-top: -17.98px;
+    position: relative;
+    width: 80px;
+  }
+  

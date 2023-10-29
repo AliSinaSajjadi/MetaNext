@@ -1,0 +1,30 @@
+.container{
+    margin: 50px auto;
+    text-align: center;
+}
+.container p {
+    color: var(--text-color-secondary-text-color, #626E94);
+    text-align: center;
+
+    /* body/body sm */
+    font-family: PeydaWeb;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 31.6px;
+    /* 175.556% */
+}
+
+.container h1 {
+    color: #000;
+    font-family: PeydaWeb;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin: 50px;
+}
+.container img{
+    width: 1200px;
+
+}
