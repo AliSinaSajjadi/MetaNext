@@ -1,3 +1,16 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.call {
+    width: 376px;
+    height: 587px;
+    flex-shrink: 0;
+    margin: auto 0
+}
+
 .info {
     background-color: #f4f8fc;
     border-radius: 20px;
@@ -10,10 +23,12 @@
 .title {
     display: flex;
     flex-direction: row-reverse;
+    margin-left: 275px;
+    padding-top: 32px;
 }
 
 .title p {
-    color: var(--text-color-secondary-text-color, #626E94);
+    color: #626E94;
     text-align: right;
     /* body/body xs */
     font-family: Peyda;
@@ -32,7 +47,17 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+
+}
+
+.titletext {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
     margin: 15px;
+    margin-bottom: 30px;
+
 }
 
 .title h3 span {
@@ -43,6 +68,78 @@
     font-weight: 700;
     line-height: normal;
 }
-.title img{
-    width: 40px;
+
+.title img {
+    width: 65px;
+}
+
+.info input {
+    display: flex;
+    width: 100px;
+    height: 22px;
+    padding: 24px 20px 24px 433px;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #FFF;
+    border: #FFF;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.info input::placeholder {
+    color: var(--text-secondary, #1E385F);
+    text-align: right;
+    font-family: Peyda;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 141.176% */
+    opacity: 0.6;
+}
+
+.subject {
+    display: flex;
+    height: 128px !important;
+    padding: 16px 20px 88px 511px;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.subject::placeholder {
+    color: #1E385F;
+    text-align: right;
+    font-family: Peyda;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 141.176% */
+    position: relative;
+    bottom: 60px;
+}
+
+.info button {
+    border: #0CA0A2;
+    display: block;
+    border-radius: 10px;
+    background: #0CA0A2;
+    width: 555px;
+    height: 65px;
+    flex-shrink: 0;
+    margin: auto;
+    color: #FFF;
+
+    text-align: center;
+    /* button/button-sm */
+    font-family: Peyda;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+
 }
