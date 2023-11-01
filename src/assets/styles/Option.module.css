@@ -1,0 +1,22 @@
+.container {
+    width: 227px;
+    height: 123px;
+    flex-shrink: 0;
+}
+
+.container img {
+    width: 59px;
+    height: 59px;
+    flex-shrink: 0;
+}
+
+.container h3 {
+    color: #000;
+
+    text-align: right;
+    font-family: PeydaWeb;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}

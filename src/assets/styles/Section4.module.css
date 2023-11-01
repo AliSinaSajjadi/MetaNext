@@ -1,0 +1,53 @@
+.container {
+    margin: auto;
+    display: flex;
+    width: 900px;
+}
+
+.container h2 {
+    color: #011627;
+    text-align: right;
+    font-family: PeydaWeb;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 73px;
+    
+    /* 214.706% */
+}
+
+.container p {
+    color: var(--text-color-secondary-text-color-2, #7E8AAB);
+    text-align: right;
+    font-family: PeydaWeb;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38.6px;
+    margin: 50px 0;
+    margin-left: 50px;
+    
+    
+    /* 214.444% */
+}
+
+.button {
+    border-radius: 10px;
+    background: #8239F8;
+    width: 240px;
+    height: 69px;
+    flex-shrink: 0;
+
+}
+
+.button p {
+    color: var(--basic-color-white, #FFF);
+    text-align: center;
+    /* button/button-sm */
+    font-family: Peyda;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 22px;
+}

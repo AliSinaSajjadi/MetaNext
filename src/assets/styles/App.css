@@ -4,10 +4,9 @@
 
 *{
     margin : 0 ;
-    padding : 0
+    padding : 0;
+    
 }
-.body{
-    width: 1440px;
-    margin: auto;
-    font-family: "PeydaWeb SemBd";
+.container {
+    margin: 0 px;
 }
