@@ -1,12 +1,17 @@
 @font-face {
-    font-family: "PeydaWeb SemBd";
-    src: "../Font/PeydaWeb-Regular (1).woff2";}
+    font-family: vazir;
+    src:url(../Font/Vazirmatn-VariableFont_wght.ttf);}
 
 *{
     margin : 0 ;
     padding : 0;
-    
+
 }
 .container {
     margin: 0 px;
+
+}
+body{
+    font-family: vazir;
+
 }

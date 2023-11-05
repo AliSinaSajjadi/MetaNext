@@ -1,17 +1,7 @@
-@font-face {
-    font-family: FontName;
-    src: url('../fonts/vazir-font-v18.0.0/Vazir-Medium.eot');
-    src: url('../fonts/vazir-font-v18.0.0/Vazir-Medium.woff2') format('../fonts/vazir-font-v18.0.0/Vazir-Medium.eotFontName-opentype'),
-         url('../fonts/vazir-font-v18.0.0/Vazir-Medium.woff') format('woff'),
-         url('../fonts/vazir-font-v18.0.0/Vazir-Medium.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-
 
 .container{
     justify-content: center;
-    font-size: FontName;
+
     display: flex;
     margin :auto;
     width: 1200px;
@@ -27,7 +17,6 @@
     align-items: center;
     gap: 42px;}
 .list li{
-    font-family: PeydaWeb;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -36,6 +25,14 @@
     margin-top: 20px;
     display: flex;
     flex-direction: row-reverse;
+}
+.list img {
+    display: flex;
+    width: 15px;
+    height: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
 }
 .list :hover{
     color: #0CA0A2;
@@ -52,7 +49,6 @@
     color: #000;
 
     text-align: right;
-    font-family: Peyda;
     font-size: 27px;
     font-style: normal;
     font-weight: 800;
@@ -61,7 +57,6 @@
 .logo p {
     color: #7E8AAB ;
     text-align: right;
-    font-family: Peyda;
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
@@ -89,7 +84,6 @@
     margin:0px 15px;
 }
 .demo h3{
-    font-family: Peyda;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;

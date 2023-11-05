@@ -1,0 +1,10 @@
+
+.container p {
+    color: #626E94;
+    text-align: right;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 31.6px;
+    overflow: hidden;
+}

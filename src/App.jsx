@@ -8,7 +8,7 @@ import Section2 from './assets/components/Section2';
 import Section3 from './assets/components/Section3';
 import Card from './assets/components/Card';
 import Section4 from './assets/components/Section4';
-import Swiper from './assets/components/Swiper';
+import Swiper1 from './assets/components/Swiper1';
 import Section5 from './assets/components/Section5';
 import Counseling from './assets/components/Counseling';
 import Footer from './assets/components/Footer';
@@ -26,6 +26,7 @@ const App = () => {
       <Section2/>
       <Section3/>
       <Card/>
+      <Swiper1/>
       <Section4/>
       <Section5/>
       <Counseling/>
