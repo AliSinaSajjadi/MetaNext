@@ -1,72 +1,50 @@
 import React from "react";
 
+import style from "../../styles/Sliders.module.css"
+
+
+import calcPurple from "../../images/calcPurple (2).png"
+import calcRed from "../../images/calcRed (2).png"
+import calcOrange from "../../images/calcOrange (2).png"
+import Data from "../../images/Data.png"
+import ProductViews from "../../images/product views.png"
+import Arrow from "../../images/arrow-left.png"
+import ProTips from "../../images/Pro Tips.png" 
 export default function slider1() {
   return (
-    <div className="slider p-4 w-[90vw]  ">
-      <div className=" mb-[50px] justify-between flex items-center">
-        <div className=" w-[45vw]">
-          <h1 className="text-[40px] font-[800] mb-[60px]">
-            سیستم حسابداری متانکست
-          </h1>
-          <p className="text-[18px] font-[400] text-grayed mb-[60px]">
-            ثبت رویداد های مالی، تهیه گزارش برای افراد درون سازمان با سرعت بالا
-            و حسابرسی سریع اسناد از مزایای ان نرم افزار است پس میتواند به سرعت
-            بخشیدن امور مالی به مجموعه ها برای رونق گرفتن و سود اوری در بازار
-            کسب و کار کمک بسزایی کند.
-          </p>
-          <img
-            className=" w-[590px]"
-            src="src/assets/Services/Group 70169 (1).png"
-            alt=""
-          />
+    <div className={style.container}>
+      <div className={style.RightDiv}>
+        <div className={style.section1}>
+          <h1>سیستم حسابداری متانکست</h1>
+          <p>ثبت رویداد های مالی، تهیه گزارش برای افراد درون سازمان با سرعت بالا و حسابرسی سریع اسناد از مزایای ان نرم افزار است پس میتواند به سرعت بخشیدن امور مالی به مجموعه ها برای رونق گرفتن و سود اوری در بازار کسب و کار کمک بسزایی کند.</p>
+          <img src={Data}/>
         </div>
-        <img src="src/assets/Services/Product views.png" alt="" />
+        <div className={style.section2}>
+          <h1>چرا باید از سیستم متانکست استفاده کنیم</h1>
+          <p>ثبت رویداد های مالی، تهیه گزارش برای افراد درون سازمان با سرعت بالا و حسابرسی سریع اسناد از مزایای ان نرم افزار است پس میتواند به سرعت بخشیدن امور مالی به مجموعه ها برای رونق گرفتن و سود اوری در بازار کسب و کار کمک بسزایی کند.</p>
+
+        </div>
+        <div  className={style.section3}>
+          <h1>
+          امکانات موجود در سیستم حسابداری
+      
+          </h1>
+          <p>سیستم کامل مالی، سیستم کامل خزانه ، و سیستم کامل انبار که شامل ثبت چک ها ، ثبت فاکتور های خرید و فروش ، نگهداری سوابق خرید و فروش ، نگهداری سوابق مشتری ، حساب های بانکی و صندوق ، گردش موجودی کالا ، حواله حساب ، صورتحساب سود و زیان ، تراز نامه ، اتصال به دستگاه پوز ، ثبت فاکتور های درامد و هزینه میشوند.</p>
+          <button><p>اطلاعات بیشتر</p><img className={style.Arrow} src={Arrow}/>
+          </button>
+        </div>
       </div>
       <div>
-        <div className=" justify-between flex items-center">
-          <div className="w-[45vw] ">
-            <h1 className="text-[34px] font-[700] mb-[60px]">
-              چرا باید از سیستم متانکست استفاده کنیم
-            </h1>
-            <p className="text-[18px] font-[400] text-grayed mb-[60px]">
-              ثبت رویداد های مالی، تهیه گزارش برای افراد درون سازمان با سرعت
-              بالا و حسابرسی سریع اسناد از مزایای ان نرم افزار است پس میتواند به
-              سرعت بخشیدن امور مالی به مجموعه ها برای رونق گرفتن و سود اوری در
-              بازار کسب و کار کمک بسزایی کند.
-            </p>
-            <h1 className="text-[34px] font-[700] mb-[60px]">
-              امکانات موجود در سیستم حسابداری
-            </h1>
-            <p className="text-[18px] font-[400] text-grayed mb-[60px] ">
-              ثبت رویداد های مالی، تهیه گزارش برای افراد درون سازمان با سرعت
-              بالا و حسابرسی سریع اسناد از مزایای ان نرم افزار است پس میتواند به
-              سرعت بخشیدن امور مالی به مجموعه ها برای رونق گرفتن و سود اوری در
-              بازار کسب و کار کمک بسزایی کند.
-            </p>
-            <img
-              className="2-[220px] my-scale"
-              src="src/assets/Services/Buttons (1).png"
-              alt=""
-            />
-          </div>
-          <div className="relative">
-            <img
-              className="absolute right-[25px] top-[-20px]"
-              src="src/assets/Services/Group 70173 (1).png"
-              alt="red"
-            />
-            <img
-              className="absolute left-[-70px] top-[-90px]"
-              src="src/assets/Services/Group 70174.png"
-              alt=""
-            />
-            <img
-              className="absolute right-[175px] top-[275px]"
-              src="src/assets/Services/Group 34785.png"
-              alt=""
-            />
-            <img src="src/assets/Services/Pro tips.png" alt="" />
-          </div>
+        <div>
+          <img src={ProductViews}/>
+        </div>
+        <div>
+          <img src={ProTips}/>
+          <img src={calcPurple} className={style.calcPurple}/>
+          <img src={calcRed} className={style.calcRed}/>
+          <img src={calcOrange} className={style.calcOrange}/>
+
+          
         </div>
       </div>
     </div>

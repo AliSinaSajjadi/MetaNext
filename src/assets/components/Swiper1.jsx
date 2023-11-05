@@ -17,7 +17,7 @@ import Slider5 from "../API/Sliders/Slider5";
 export default function ServicesContainer() {
   const [selected, setSelected] = useState(0);
   const [previousSelected, setPreviousSelected] = useState(0);
-  const swiperElRef = useRef(null); // Type assertion to HTMLDivElement
+  const swiperElRef = useRef(null);
   const data = ServicesData;
   const [autoChange, setAutoChange] = useState(true);
   const duration = 5000;
@@ -73,23 +73,22 @@ export default function ServicesContainer() {
   return (
     <div>
       <div className="mt-[100px] p-[3vw] mx-[auto] bg-[#F5F8FC]  ">
-        <p className="text-[18px] font-[300] text-grayed mb-[40px]">
+        <p className={style.text}>
           یک پلتفرم برای تمامی نیاز ها
         </p>
-        <h2 className="text-[40px] font-[800]">خدمات ما در متانکست</h2>
-        <div className="flex ">
+        <h2 className={style.title}>خدمات ما در متانکست</h2>
+        <div className= {style.ServiceContainer}>
           {data.map((ele, idx) => (
             <div
               key={idx}
               onClick={() => manualClick(idx)}
-              className="cursor-pointer w-[100vw] mr-[20px]"
+              className= {style.Item}
             >
               <img
-                className="cursor-pointer mt-[50px] w-[60px] h-[60px]"
                 src={selected === idx ? ele.image2 : ele.image1}
-                alt=""
+                alt={selected === idx ? "image2" : "image1"}
               />
-              <p className={`my-[15px] text-[20px] font-[600] `}>{ele.text}</p>
+              <p>{ele.text}</p>
               <ProgressBar
                 duration={duration}
                 selectedIdx={selected}

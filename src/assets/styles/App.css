@@ -13,5 +13,19 @@
 }
 body{
     font-family: vazir;
-
+    overflow-x: hidden;
+    margin: 30px;
 }
+.progress-bar {
+    width: 100%;
+    height: 6px;
+    border-radius: 5px;
+    background-color: #ccc;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #09c03c;
+    border-radius: 5px;
+    transition: width 0.05s;
+  }

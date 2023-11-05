@@ -12,6 +12,7 @@ import Swiper1 from './assets/components/Swiper1';
 import Section5 from './assets/components/Section5';
 import Counseling from './assets/components/Counseling';
 import Footer from './assets/components/Footer';
+import Swiper2 from './assets/components/Swiper2';
 
 //styles
 
@@ -31,6 +32,7 @@ const App = () => {
       <Section5/>
       <Counseling/>
       <Footer/>
+      <Swiper2/>
     </div>
   );
 };

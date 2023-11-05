@@ -1,0 +1,21 @@
+.swiper-button-next{
+    position: relative;
+    right: 200px;
+    width: 200px;
+
+}
+.swiper-button-prev{
+background-color: black;
+
+}
+.swiper-pagination{
+    position: relative;
+    width: 100px;
+    background-color: black;
+}
+.container{
+    display: flex;
+}
+.swiperr{
+    display: flex;
+}

@@ -1,0 +1,70 @@
+.container {
+    display: flex;
+    direction: rtl;
+    height: 1500px;
+    margin-bottom: 0px;
+
+}
+
+.container p {
+    color: var(--text-color-secondary-text-color, #626E94);
+    text-align: right;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 41.6px;
+    /* 231.111% */
+}
+
+.container h1 {
+    margin-bottom: 20px;
+}
+
+.container button {
+    width: 220px;
+    height: 63px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: var(--primary-color-primary-color, #0CA0A2);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container button p{
+    color: #FFF;
+    text-align: center;
+    margin-left: 5px;
+
+
+/* button/button-sm */
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.RightDiv {
+    width: 600px;
+    margin-left: 100px;
+}
+
+.section2 {
+    margin: 80px 0;
+
+}
+.calcPurple{
+    position: relative;
+    right: 440px;
+    bottom: 500px;
+}
+.calcRed{
+    position: relative;
+    left: 150px;
+    bottom: 465px;
+}
+.calcOrange{
+    position: relative;
+    left: 200px;
+    bottom: 150px;
+}
