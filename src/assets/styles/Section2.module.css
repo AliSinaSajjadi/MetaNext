@@ -2,43 +2,61 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    margin:0 auto ;
+    width: 1200px;
+    margin-bottom: -900px;
 }
 
 
 .calculater{
     position: relative;
-    right:130px;
+    right:-20px;
     bottom: 500px;
 }
 .search{
     position: relative;
-    right: 0px;
+    right: -150px;
     bottom: 250px;
 }
 .chat{
     position: relative;
-    right: 150px;
+    right: 0px;
     bottom: 150px;
 }
 .managment{
     position: relative;
-    right: 300px;
+    right: 150px;
     bottom: 250px;
 }
 .app{
     position: relative;
-    right: 1050px;
-    bottom: 800px;
+    right: 20px;
+    bottom: 500px;
 }
 .front{
-    z-index: 1;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    width: 1600px;
+    align-items: center;
 
 }
-.back{
-    z-index: 2;
-    position: absolute;
+.tablet{
+    width: 800px;
+}
+.back1{
+    z-index: 1;
+    position: relative;
     bottom: 700px;
-    right: 100px;
+    right: 300px;
     transform: rotate(-25deg);
+    
+}
+.back2{
+    z-index: 1;
+    position: relative;
+    bottom: 1200px;
+    right:-400px;
+    transform: rotate(130deg);
+    
 }

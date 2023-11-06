@@ -38,7 +38,7 @@ export default function slider1() {
         <div>
           <img src={ProductViews}/>
         </div>
-        <div>
+        <div className={style.tips} >
           <img src={ProTips}/>
           <img src={calcPurple} className={style.calcPurple}/>
           <img src={calcRed} className={style.calcRed}/>

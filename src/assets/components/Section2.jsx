@@ -23,11 +23,12 @@ const Section2 = () => {
                     <img src={managment} className={style.managment} />
                     <img src={app} className={style.app} />
                 </div>
-            <div className={style.back}>
-                <img src={backGround}/>
             </div>
+                
+                    <img className={style.back1} src={backGround} />
+                    <img className={style.back2} src={backGround} />
+                
 
-            </div>
         </div>
     );
 };

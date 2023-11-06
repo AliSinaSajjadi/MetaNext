@@ -105,7 +105,7 @@ export default function ServicesContainer() {
             <div className="swiper-slide ">
               <Slider1 />
             </div>
-            <div className="swiper-slide">
+            {/* <div className="swiper-slide">
               <Slider2 />
             </div>
             <div className="swiper-slide">
@@ -116,7 +116,7 @@ export default function ServicesContainer() {
             </div>
             <div className="swiper-slide">
               <Slider5 />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
