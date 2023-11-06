@@ -13,6 +13,7 @@ import Section5 from './assets/components/Section5';
 import Counseling from './assets/components/Counseling';
 import Footer from './assets/components/Footer';
 import Swiper2 from './assets/components/Swiper2';
+import Swiper3 from './assets/components/Swiper3';
 
 //styles
 
@@ -29,10 +30,11 @@ const App = () => {
       <Card/>
       <Swiper1/>
       <Section4/>
+      <Swiper2/>
       <Section5/>
+      <Swiper3/>
       <Counseling/>
       <Footer/>
-      <Swiper2/>
     </div>
   );
 };

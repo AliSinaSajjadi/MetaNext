@@ -34,7 +34,7 @@ export default function slider1() {
           </button>
         </div>
       </div>
-      <div>
+      <div className={style.tips}>
         <div>
           <img src={ProductViews}/>
         </div>

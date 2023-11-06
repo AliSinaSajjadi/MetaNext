@@ -10,6 +10,11 @@ import chart from "../images/presention-chart.png"
 import earth from "../images/earth.png"
 
 const Navbar = () => {
+    function toPersianNumerals(input) {
+        const persianDigits = ["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"];
+    
+        return input.replace(/\d/g, (match) => persianDigits[+match]);
+      }
     return (
         <div className={style.container}>
             <div className={style.logo}>
@@ -27,15 +32,15 @@ const Navbar = () => {
                     <li>صفحه اصلی</li>
                     <li> <img src={arrowDown} />سرویس ها</li>
                     <li>قیمت ها</li>
-                    <li><img src={arrowDown} />بلاگ متانکست</li>
-                    <li><img src={arrowDown} />لینک های مفید</li>
+                    <li><img src={arrowDown} /><p>بلاگ متانکست</p></li>
+                    <li><img src={arrowDown} /><p>لینک های مفید</p></li>
                 </ul>
             </div>
             <div className={style.dial}>
                 <img src={dial} />
                 <div>
                 <p>تماس با ما</p>
-                <h3>09152663045</h3>
+                <h3>{toPersianNumerals("09152663045")}</h3>
                 </div>
             </div>
             <div className={style.demo}>

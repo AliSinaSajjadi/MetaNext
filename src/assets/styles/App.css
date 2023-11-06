@@ -7,14 +7,11 @@
     padding : 0;
 
 }
-.container {
-    margin: 0 px;
-
-}
 body{
     font-family: vazir;
-    overflow-x: hidden;
-    margin: 30px;
+    margin:0 50px;
+    /* overflow-x: hidden; */
+    /* width: 1400px; */
 }
 .progress-bar {
     width: 100%;

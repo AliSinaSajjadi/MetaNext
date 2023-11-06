@@ -1,21 +1,110 @@
-.swiper-button-next{
-    position: relative;
-    right: 200px;
-    width: 200px;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+        overflow-x: hidden;
+        margin: 50px 0;
+    }
 
-}
-.swiper-button-prev{
-background-color: black;
+    .swiperWrapper {
+        width: 900px;
 
-}
-.swiper-pagination{
-    position: relative;
-    width: 100px;
-    background-color: black;
-}
-.container{
-    display: flex;
-}
-.swiperr{
-    display: flex;
-}
+    }
+
+    .text {
+        text-align: right;
+
+        /* Heading/H 2 */
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .percentage {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .frame {
+        border-radius: 6px;
+        padding: 10px;
+        gap: 10px;
+
+        /* body/body xs */
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .name {
+        color: var(--primary-color-primary-color, #0CA0A2);
+        text-align: right;
+
+        /* Heading/H 6 */
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .discription {
+        width: 381px;
+        height: 103px;
+        flex-shrink: 0;
+        color: var(--text-color-secondary-text-color, #626E94);
+        text-align: right;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 33.6px;
+        /* 186.667% */
+    }
+
+    span {
+        color: #0CA0A2;
+    }
+
+    .title {
+        width: 300px;
+    }
+
+    .title h1 {
+        margin: 50px 0;
+
+    }
+
+    .title p {
+        color: var(--text-color-secondary-text-color, #626E94);
+        text-align: right;
+        /* body/body sm */
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 31.6px;
+        /* 175.556% */
+    }
+        /* .title img {
+            margin: 0 20px;
+        } */
+    .navigations{
+        display: flex;
+        align-items: center;
+    }
+    .navBtn {
+        width: 63px;
+        margin: unset;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 7px;
+        background: rgba(57, 89, 248, 0.10);
+    }
+  .pagination{
+        height: 13px;
+        margin: 25px 0;
+    
+  }

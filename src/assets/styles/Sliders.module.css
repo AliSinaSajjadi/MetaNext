@@ -1,6 +1,7 @@
 .container {
     display: flex;
     direction: rtl;
+
     height: 1500px;
     margin-bottom: 0px;
 
@@ -67,4 +68,7 @@ line-height: normal;
     position: relative;
     left: 200px;
     bottom: 150px;
+}
+.tips{
+    width: 100px;
 }

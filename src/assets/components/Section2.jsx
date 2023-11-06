@@ -9,18 +9,24 @@ import managment from "../images/managment.png"
 import app from "../images/app.png"
 import metanext from "../images/MetaNext.png"
 import tablet from "../images/tablet.png"
+import backGround from "../images/sec2back.png"
 const Section2 = () => {
     return (
         <div className={style.container}>
-            <img src={metanext} />
-            <div>
+            <div className={style.front}>
+                <img className={style.metanext} src={metanext} />
                 <img src={tablet} className={style.tablet} />
-                <img src={calculater} className={style.calculater}/>
-                <img src={search} className={style.search}/>
-                <img src={chat} className={style.chat}/>
-                <img src={managment} className={style.managment}/>
-                <img src={app} className={style.app}/>
-                
+                <div>
+                    <img src={calculater} className={style.calculater} />
+                    <img src={search} className={style.search} />
+                    <img src={chat} className={style.chat} />
+                    <img src={managment} className={style.managment} />
+                    <img src={app} className={style.app} />
+                </div>
+            <div className={style.back}>
+                <img src={backGround}/>
+            </div>
+
             </div>
         </div>
     );

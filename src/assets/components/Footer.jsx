@@ -26,6 +26,11 @@ import copyright from "../images/copyright.png"
 
 
 const Footer = () => {
+    function toPersianNumerals(input) {
+        const persianDigits = ["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"];
+    
+        return input.replace(/\d/g, (match) => persianDigits[+match]);
+      }
     return (
         <div className={style.container}>
             <div className={style.section1}>
@@ -37,7 +42,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className={style.number}>
-                    <h2>09152663045</h2>
+                    <h2>{toPersianNumerals("09152663045")}</h2>
                 </div>
 
             </div>

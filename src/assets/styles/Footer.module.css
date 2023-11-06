@@ -1,4 +1,6 @@
 .section1 {
+    margin: unset;
+    margin: 0;
     display: flex;
     flex-direction: row;
     background: #011627;
