@@ -1,14 +1,13 @@
 import React from 'react';
 
-import style from "../styles/Navbar.module.css"
-
+import style from "../../styles/Navbar.module.css"
+import { Link } from 'react-router-dom';
 //imgs
-import logo from "../images/logo.png"
-import arrowDown from "../images/arrow-down.png"
-import dial from "../images/Dial.svg"
-import chart from "../images/presention-chart.png"
-import earth from "../images/earth.png"
-import vector from "../images/Vector 31.png"
+import logo from "../../images/logo.png"
+import arrowDown from "../../images/arrow-down.png"
+import dial from "../../images/Dial.svg"
+import chart from "../../images/presention-chart.png"
+import earth from "../../images/earth.png"
 
 const Navbar = () => {
     function toPersianNumerals(input) {
@@ -44,16 +43,17 @@ const Navbar = () => {
                 <h3>{toPersianNumerals("09152663045")}</h3>
                 </div>
             </div>
+            <Link to="login" className={style.Link}>
             <div className={style.demo}>
                 <img src={chart} />
                 <h3>دمو رایگان</h3>
             </div>
+            </Link>
             <div className={style.language}>
                 <img src={arrowDown} />
                 <p>En</p>
                 <img src={earth} />
             </div>
-            <img className={style.vector} src={vector}/>
         </div>
     );
 };

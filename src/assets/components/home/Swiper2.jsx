@@ -2,14 +2,14 @@ import React, { useRef, useEffect, useState } from "react";
 import Swiper from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
-import Comments from "../API/Comments"
-import NavLeft from "../images/Navigation left.png"
-import NavRight from "../images/Navigation right.png"
-import NavRightUn from "../images/NavigationUnactive right.png"
-import NavLeftUn from "../images/NavigationUnactive left.png"
-import style from "../styles/Swiper2.module.css"
-import pagination from "../images/pagination.png"
-import play from "../images/Play.png"
+import Comments from "../../API/Comments"
+import NavLeft from "../../images/Navigation left.png"
+import NavRight from "../../images/Navigation right.png"
+import NavRightUn from "../../images/NavigationUnactive right.png"
+import NavLeftUn from "../../images/NavigationUnactive left.png"
+import style from "../../styles/Swiper2.module.css"
+import pagination from "../../images/pagination.png"
+import play from "../../images/Play.png"
 
 const Swiper2 = () => {
     const swiperElRef = useRef(null);

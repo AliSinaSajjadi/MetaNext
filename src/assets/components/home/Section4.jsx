@@ -1,6 +1,6 @@
 import React from 'react';
-import Image from "../images/Section4img.png"
-import style from "../styles/Section4.module.css"
+import Image from "../../images/Section4img.png"
+import style from "../../styles/Section4.module.css"
 const Section4 = () => {
     return (
         <div className={style.container}>

@@ -1,5 +1,5 @@
 import React from 'react';
-import style from "../styles/Items.module.css"
+import style from "../../styles/Items.module.css"
 const Items = (props) => {
     return (
         <div className={style.container}>

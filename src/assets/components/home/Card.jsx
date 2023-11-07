@@ -1,12 +1,12 @@
 import React from "react";
-import style from "../styles/Card.module.css";
-import line from "../images/line.png"
-import Mask from "../images/Mask.svg"
-import quet from "../images/quet.png"
-import Chart from "../images/Chart-square.png"
-import People from "../images/People.png"
-import Heart from "../images/Heart.png"
-import Wallet from "../images/Wallet.png"
+import style from "../../styles/Card.module.css";
+import line from "../../images/line.png"
+import Mask from "../../images/Mask.svg"
+import quet from "../../images/quet.png"
+import Chart from "../../images/Chart-square.png"
+import People from "../../images/People.png"
+import Heart from "../../images/Heart.png"
+import Wallet from "../../images/Wallet.png"
 const Card = () => {
     return (
         <div className={style.box}>

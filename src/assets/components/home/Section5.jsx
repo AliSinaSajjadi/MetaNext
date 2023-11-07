@@ -1,6 +1,6 @@
 import React from 'react';
-import Customers from "../images/Customers.png"
-import style from "../styles/Section5.module.css"
+import Customers from "../../images/Customers.png"
+import style from "../../styles/Section5.module.css"
 const Section5 = () => {
     return (
         <div className={style.container}>

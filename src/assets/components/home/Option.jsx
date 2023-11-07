@@ -1,5 +1,5 @@
 import React from 'react';
-import style from "../styles/option.module.css"
+import style from "../../styles/option.module.css"
 const Option = (props) => {
     return (
         <div className={style.container}>

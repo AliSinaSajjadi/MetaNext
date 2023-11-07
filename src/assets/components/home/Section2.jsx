@@ -1,15 +1,15 @@
 import React from 'react';
 
-import style from "../styles/Section2.module.css"
+import style from "../../styles/Section2.module.css"
 
-import calculater from "../images/calculater.png"
-import search from "../images/search.png"
-import chat from "../images/chat.png"
-import managment from "../images/managment.png"
-import app from "../images/app.png"
-import metanext from "../images/MetaNext.png"
-import tablet from "../images/tablet.png"
-import backGround from "../images/sec2back.png"
+import calculater from "../../images/calculater.png"
+import search from "../../images/search.png"
+import chat from "../../images/chat.png"
+import managment from "../../images/managment.png"
+import app from "../../images/app.png"
+import metanext from "../../images/MetaNext.png"
+import tablet from "../../images/tablet.png"
+import backGround from "../../images/sec2back.png"
 const Section2 = () => {
     return (
         <div className={style.container}>

@@ -1,15 +1,15 @@
 import React from 'react';
 import Items from './Items';
 
-import style from "../styles/Section3.module.css"
+import style from "../../styles/Section3.module.css"
 
-import Skate from "../images/Skate.png"
-import Reading from "../images/Reading.png"
-import Selfie from "../images/Selfie.png"
-import Sprinting from "../images/Sprinting.png"
-import Managing from "../images/Managing.png"
-import Orgnize from "../images/Orgnize.png"
-import unboxing from "../images/unboxing.png"
+import Skate from "../../images/Skate.png"
+import Reading from "../../images/Reading.png"
+import Selfie from "../../images/Selfie.png"
+import Sprinting from "../../images/Sprinting.png"
+import Managing from "../../images/Managing.png"
+import Orgnize from "../../images/Orgnize.png"
+import unboxing from "../../images/unboxing.png"
 const Section3 = () => {
     return (
         <div className={style.container}>

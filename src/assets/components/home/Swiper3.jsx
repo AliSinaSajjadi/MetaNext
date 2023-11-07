@@ -1,15 +1,15 @@
 import React, { useRef, useEffect, useState } from "react";
 import Swiper from "swiper";
 import moment from "jalali-moment";
-import articleData from "../API/ArticleData";
-import NavLeft from "../images/Navigation left.png"
-import NavRight from "../images/Navigation right.png"
-import NavRightUn from "../images/NavigationUnactive right.png"
-import NavLeftUn from "../images/NavigationUnactive left.png"
-import Calendar from "../images/calendar.png"
-import clock from "../images/clock.png"
-import style from "../styles/swiper3.module.css"
-import pagination from "../images/pagination.png"
+import articleData from "../../API/ArticleData";
+import NavLeft from "../../images/Navigation left.png"
+import NavRight from "../../images/Navigation right.png"
+import NavRightUn from "../../images/NavigationUnactive right.png"
+import NavLeftUn from "../../images/NavigationUnactive left.png"
+import Calendar from "../../images/calendar.png"
+import clock from "../../images/clock.png"
+import style from "../../styles/swiper3.module.css"
+import pagination from "../../images/pagination.png"
 
 const ArticleData = articleData;
 

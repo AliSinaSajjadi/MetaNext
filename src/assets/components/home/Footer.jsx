@@ -1,27 +1,27 @@
 import React from 'react';
 
 //style
-import style from "../styles/Footer.module.css"
+import style from "../../styles/Footer.module.css"
 
 //imgs
-import logo from "../images/logo.png"
-import Dial from "../images/DialW.png"
-import telegram from "../images/Telegram.png"
-import instagram from "../images/Instagram.png"
-import LinkedIn from "../images/Linked In.png"
-import facebook from "../images/Facebook.png"
-import enamad from "../images/enamad.png"
-import calcGreen from "../images/calcGreen.png"
-import calcOrange from "../images/calcOrange.png"
-import calcPink from "../images/calcPink.png"
-import calcPurule from "../images/calcPurple.png"
-import calcRed from "../images/calcRed.png"
-import location from "../images/location.png"
-import DialSmall from "../images/DialSmall.png"
-import Message from "../images/Message.png"
-import demo from "../images/presention-chart-blue.png"
-import background from "../images/Sec4back.png"
-import copyright from "../images/copyright.png"
+import logo from "../../images/logo.png"
+import Dial from "../../images/DialW.png"
+import telegram from "../../images/Telegram.png"
+import instagram from "../../images/Instagram.png"
+import LinkedIn from "../../images/Linked In.png"
+import facebook from "../../images/Facebook.png"
+import enamad from "../../images/enamad.png"
+import calcGreen from "../../images/calcGreen.png"
+import calcOrange from "../../images/calcOrange.png"
+import calcPink from "../../images/calcPink.png"
+import calcPurule from "../../images/calcPurple.png"
+import calcRed from "../../images/calcRed.png"
+import location from "../../images/location.png"
+import DialSmall from "../../images/DialSmall.png"
+import Message from "../../images/Message.png"
+import demo from "../../images/presention-chart-blue.png"
+import background from "../../images/Sec4back.png"
+import copyright from "../../images/copyright.png"
 
 
 

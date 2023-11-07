@@ -1,7 +1,7 @@
 import React from 'react';
-import style from "../styles/Counseling.module.css"
-import Dial from "../images/Dial.svg"
-import Call from "../images/Call.png"
+import style from "../../styles/Counseling.module.css"
+import Dial from "../../images/Dial.svg"
+import Call from "../../images/Call.png"
 const Counseling = () => {
     return (
         <div className={style.container}>

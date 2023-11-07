@@ -2,17 +2,17 @@ import React, { useRef, useEffect, useState } from "react";
 import Swiper from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
-import style from "../styles/Swiper1.module.css"
-import ServicesData from "../API/ServicesData";
-import ProgressBar from "../helpers/ProgressBar";
-import Schat from "../images/Group 70260.png"
-import vector from "../images/Vector 19.png"
+import style from "../../styles/Swiper1.module.css"
+import ServicesData from "../../API/ServicesData";
+import ProgressBar from "../../helpers/ProgressBar";
+import Schat from "../../images/Group 70260.png"
+import vector from "../../images/Vector 19.png"
 
-import Slider1 from "../API/Sliders/Slider1";
-import Slider2 from "../API/Sliders/Slider2";
-import Slider3 from "../API/Sliders/Slider3";
-import Slider4 from "../API/Sliders/Slider4";
-import Slider5 from "../API/Sliders/Slider5";
+import Slider1 from "../../API/Sliders/Slider1";
+import Slider2 from "../../API/Sliders/Slider2";
+import Slider3 from "../../API/Sliders/Slider3";
+import Slider4 from "../../API/Sliders/Slider4";
+import Slider5 from "../../API/Sliders/Slider5";
 
 
 
