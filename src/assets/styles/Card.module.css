@@ -47,6 +47,7 @@
     position: absolute;
     text-align: left;
     top: 74px;
+    font-family: peyda-bold;
   }
   
   .box .img {
@@ -77,6 +78,7 @@
     text-align: center;
     top: 210px;
     width: 460px;
+    font-family: peyda-light;
   }
   .frame1 {
     align-items: center;
@@ -105,6 +107,8 @@
     position: relative;
     text-align: center;
     width: fit-content;
+    font-family: peyda-regular;
+
   }
   
   .frame1 .img1 {
@@ -130,6 +134,8 @@
     width: 283.67px;
     bottom: 850px;
     right: 400px;
+    font-family: peyda-regular;
+
   }
   
   .frame2 .textwrapper2 {
@@ -168,6 +174,8 @@
     width: 283.67px;
     bottom: 600px;
     left: 300px;
+    font-family: peyda-regular;
+
   }
   
   .frame3 .textwrapper3 {
@@ -205,6 +213,8 @@
     width: 283.67px;
     bottom: 650px;
     right: 500px;
+    font-family: peyda-regular;
+
   }
   
   .frame4 .textwrapper4 {
@@ -227,5 +237,7 @@
     margin-top: -17.98px;
     position: relative;
     width: 80px;
+    font-family: peyda-regular;
+  
   }
   

@@ -5,6 +5,8 @@ import "swiper/css/navigation";
 import style from "../styles/Swiper1.module.css"
 import ServicesData from "../API/ServicesData";
 import ProgressBar from "../helpers/ProgressBar";
+import Schat from "../images/Group 70260.png"
+import vector from "../images/Vector 19.png"
 
 import Slider1 from "../API/Sliders/Slider1";
 import Slider2 from "../API/Sliders/Slider2";
@@ -71,8 +73,8 @@ export default function ServicesContainer() {
   }
 
   return (
-    <div>
-      <div className="mt-[100px] p-[3vw] mx-[auto] bg-[#F5F8FC]  ">
+    <div className={style.body}>
+      <div >
         <p className={style.text}>
           یک پلتفرم برای تمامی نیاز ها
         </p>
@@ -99,13 +101,13 @@ export default function ServicesContainer() {
         </div>
       </div>
 
-      <div className="p-10 flex items-center justify-between bg-[#F5F8FC] mb-[30px]  flex-row-reverse">
+      <div >
         <div className= {`swiper-container overflow-hidden ${style.container}`}  ref={swiperElRef}>
           <div className="swiper-wrapper ">
             <div className="swiper-slide ">
               <Slider1 />
             </div>
-            {/* <div className="swiper-slide">
+            <div className="swiper-slide">
               <Slider2 />
             </div>
             <div className="swiper-slide">
@@ -116,9 +118,11 @@ export default function ServicesContainer() {
             </div>
             <div className="swiper-slide">
               <Slider5 />
-            </div> */}
+            </div>
           </div>
         </div>
+      <img src={Schat} className={style.Schat}/>
+      <img src={vector} className={style.vector}/>
       </div>
     </div>
   );

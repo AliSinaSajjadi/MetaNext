@@ -9,6 +9,7 @@
 }
 .container h3{
     color: #626E94;
+    font-family: peyda-light;
 
 /* Heading/H 5 */
 font-size: 26px;
@@ -18,8 +19,10 @@ line-height: normal;
 }
 .container h3 span{
     color: black;
+    font-family: peyda-medium;
 }
 .container h1{
+    font-family: peyda-bold;
     color: #000;
 text-align: center;
 
@@ -31,6 +34,7 @@ line-height: normal;
 /* margin: 40px auto; */
 }
 .container p{
+    font-family: peyda-light;
     width: 1000px;
     color: #7B7F8C;
     text-align: center;
@@ -76,4 +80,26 @@ line-height: normal;
     }
     .buttonContainer :nth-child(3){
         transform: rotate(180deg);
+    }
+    .line{
+        position: absolute;
+        top: 100px;
+    }
+    .eclipse{
+        position: absolute;
+        top: 150px;
+        right:  420px;
+    }
+    .round{
+        position: absolute;
+        left: 300px;
+    }
+    .Pround{
+        position: absolute;
+        left: 40px;
+    }
+    .Ground{
+        position: absolute;
+        right: 200px;
+        top: 200px;
     }

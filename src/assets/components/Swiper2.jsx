@@ -9,12 +9,18 @@ import NavRightUn from "../images/NavigationUnactive right.png"
 import NavLeftUn from "../images/NavigationUnactive left.png"
 import style from "../styles/Swiper2.module.css"
 import pagination from "../images/pagination.png"
+import play from "../images/Play.png"
 
 const Swiper2 = () => {
     const swiperElRef = useRef(null);
     const [isPrevButtonClickable, setIsPrevButtonClickable] = useState(true);
     const [isNextButtonClickable, setIsNextButtonClickable] = useState(true);
     const comments = Comments;
+    function toPersianNumerals(input) {
+        const persianDigits = ["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"];
+    
+        return input.replace(/\d/g, (match) => persianDigits[+match]);
+      }
 
     useEffect(() => {
         let swiper = null;
@@ -27,12 +33,12 @@ const Swiper2 = () => {
             });
 
             swiper.on("slideChange", () => {
-                setIsPrevButtonClickable(!swiper.isEnd);
-                setIsNextButtonClickable(!swiper.isBegining);
+                setIsPrevButtonClickable(!swiper.isBegining);
+                setIsNextButtonClickable(!swiper.isEnd);
             });
 
-            setIsPrevButtonClickable(!swiper.isEnd);
-            setIsNextButtonClickable(!swiper.isBegining);
+            setIsPrevButtonClickable(!swiper.isBeginning);
+            setIsNextButtonClickable(!swiper.isEnd);
 
             const handleNextClick = () => {
                 swiper.slideNext();
@@ -57,7 +63,7 @@ const Swiper2 = () => {
 
 
     return (
-        <div className={`p-10 flex items-center justify-between bg-[white]  flex-row-reverse ${style.container}`}>
+        <div className={style.container}>
             <div className={`swiper-container ${style.container}`} ref={swiperElRef}>
                 <div className={`swiper-wrapper ${style.swiperWrapper}`}>
                     {comments.map((comment, idx) => {
@@ -76,41 +82,47 @@ const Swiper2 = () => {
                                         {"%" + comment.percentage + "+"}
                                     </p>
 
-                                        <p className={style.frame}>
-                                            افزایش سود مشتری
-                                        </p>
+                                    <p className={style.frame}>
+                                        افزایش سود مشتری
+                                    </p>
                                 </div>
                                 <h1 className={style.name}>
                                     {comment.name}
                                 </h1>
-                                <p className="text-[20px] font-[500] text-[#0CA0A2] mt-[8px]">
+                                <p className={style.role}>
                                     {comment.role}
                                 </p>
                                 <p className={style.discription}>
                                     {comment.text}
                                 </p>
-                                <img src={comment.url} alt="" />
+                                <div className={style.video}>
+                                    <img className={style.img} src={comment.url} alt="" />
+                                    <img className={style.play} src={play} />
+                                    <div className={style.length}>
+                                        <p >{toPersianNumerals("11:23")}</p>
+                                    </div>
+                                </div>
                             </div>
                         );
                     })}
                 </div>
             </div>
             <div className={style.title}>
-                <p className="text-grayed text-[18px] font-[300] mb-[40px]">
+                <p >
                     تجربه مدیراین کسب و کاری که به ما اعتماد کردن
                 </p>
-                <h1 className="text-[40px] font-[700] mb-[40px]">
-                    در مورد <span className="font-[900] text-[#0CA0A2]">متانکست</span> چه
+                <h1 >
+                    در مورد <span >متانکست</span> چه
                     میشنویم?
                 </h1>
                 <div className={style.navigations}>
                     <img
-                    className={style.navBtn}
+                        className={style.navBtn}
                         id="customNextButton"
                         src={
                             isNextButtonClickable
-                                ? NavRight
-                                : NavRightUn
+                                ? NavLeft
+                                : NavLeftUn
                         }
                         alt=""
                         style={{
@@ -119,12 +131,12 @@ const Swiper2 = () => {
                     />
                     <img className={style.pagination} src={pagination} alt="" />
                     <img
-                    className={style.navBtn}
+                        className={style.navBtn}
                         id="customPrevButton"
                         src={
                             isPrevButtonClickable
-                                ? NavLeft
-                                : NavLeftUn
+                                ? NavRight
+                                : NavRightUn
                         }
                         alt=""
                         style={{

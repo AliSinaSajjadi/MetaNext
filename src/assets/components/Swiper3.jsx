@@ -76,10 +76,10 @@ export default function Swiper3() {
             </p>
 
             <div className={style.title}>
-                <h1 className="text-[40px] font-[700]">
-                    جدیدترین <span className="font-[900] text-[#0CA0A2]">مقالات</span>
+                <h1 >
+                    جدیدترین <span >مقالات</span>
                 </h1>
-                <div className="flex items-center">
+                <div >
                     <img
                         className={style.nextBtn}
                         id="customPrevButton2"
@@ -117,22 +117,22 @@ export default function Swiper3() {
 
                         return (
                             <div
-                                className="mt-10 swiper-slide p-5 rounded-[20px] article-card"
+                                className={`swiper-slide ${style.card}`}
                                 key={idx}
 
                             >
                                 <img
-                                    className="mb-4 cursor-pointer"
+                                    className={style.articleimg}
                                     src={article.image}
                                     alt=""
                                 />
-                                <img className="mb-4 cursor-pointer" src={article.tag} alt="" />
+                                <img src={article.tag} alt="" />
                                 <h1 className={style.item}>
                                     {article.title}
                                 </h1>
                                 <div className={style.date}>
                                     <div className={style.time}>
-                                        <p className="flex text-grayed text-[14px] font-[400] items-center">
+                                        <p >
                                             {`مدت زمان مطالعه ${toPersianNumerals(article.duration.toString())} دقیقه`}
                                         </p>
                                         <img
@@ -142,11 +142,11 @@ export default function Swiper3() {
                                         />
                                     </div>
                                     <div className={style.time}>
-                                        <p className="flex text-grayed text-[14px] font-[400] items-center">
+                                        <p >
                                             {toPersianNumerals(jalaliDate)}
                                         </p>
                                         <img
-                                            className="mr-2"
+                                            
                                             src={Calendar}
                                             alt=""
                                         />

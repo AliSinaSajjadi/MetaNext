@@ -1,6 +1,38 @@
 @font-face {
-    font-family: vazir;
-    src:url(../Font/Vazirmatn-VariableFont_wght.ttf);}
+    font-family:peyda-black;
+    src:url(../Font/Peyda/Peyda-Black.ttf);
+    font-weight:lighter;}
+    @font-face {
+    font-family: peyda-thin;
+    src: url(../Font/Peyda/Peyda-Thin.ttf); 
+    font-weight: lighter; 
+}@font-face {
+    font-family: peyda-bold;
+    src: url(../Font/Peyda/Peyda-Bold.ttf);
+}
+@font-face {
+    font-family: peyda-extra-bold;
+    src: url(../Font/Peyda/Peyda-ExtraBold.ttf);
+    font-weight: bolder;
+}@font-face {
+    font-family: peyda-extra-light;
+    src: url(../Font/Peyda/peyda-extralight.ttf);
+}@font-face {
+    font-family: peyda-light;
+    src: url(../Font/Peyda/peyda-light.ttf);
+    font-weight: 300;
+}@font-face {
+    font-family: peyda-medium;
+    src: url(../Font/Peyda/Peyda-Medium.ttf);
+}@font-face {
+    font-family: peyda-regular;
+    src: url(../Font/Peyda/Peyda-Regular.ttf);
+}@font-face {
+    font-family: peyda-semibold;
+    src: url(../Font/Peyda/Peyda-SemiBold.ttf);
+}
+
+
 
 *{
     margin : 0 ;
@@ -9,9 +41,8 @@
 
 }
 body{
-    font-family: vazir;
-    margin:0 50px;
     overflow-x: hidden;
+    
 }
 .progress-bar {
     width: 100%;

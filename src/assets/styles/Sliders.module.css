@@ -15,10 +15,13 @@
     font-weight: 400;
     line-height: 41.6px;
     /* 231.111% */
+    font-family: peyda-medium;
+    margin: 60px 0;
 }
 
 .container h1 {
-    margin-bottom: 20px;
+    margin: 60px 0;
+    font-family: peyda-extra-bold;
 }
 
 .container button {
@@ -31,6 +34,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: peyda-light;
 }
 .container button p{
     color: #FFF;

@@ -1,6 +1,4 @@
 .section1 {
-    margin: unset;
-    margin: 0;
     display: flex;
     flex-direction: row;
     background: #011627;
@@ -10,6 +8,8 @@
     justify-content: space-between;
     margin-top: 70px;
     align-items: center;
+    font-family: peyda-medium;
+
 
 }
 
@@ -59,7 +59,7 @@
     color: var(--basic-color-white, #FFF);
     text-align: right;
     /* Heading/H 2 */
-    font-size: 40px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -72,6 +72,7 @@
     margin: 50px;
     border-bottom: solid rgba(189, 197, 221, 0.80) 1px;
     padding-bottom: 20px;
+    font-family: peyda-medium;
 }
 
 .section2 img {
@@ -105,6 +106,7 @@
     font-weight: 300;
     line-height: 160%;
     width: 1500px;
+    font-family: peyda-light;
 }
 
 .logoImage {
@@ -118,6 +120,7 @@
 .section3 {
     display: flex;
     justify-content: space-around;
+
 }
 
 .section3 h3 {
@@ -127,6 +130,7 @@
     font-style: normal;
     font-weight: 800;
     line-height: normal;
+    font-family: peyda-medium;
 }
 
 .section3 li {
@@ -137,9 +141,10 @@
     /* body/body xs */
     font-size: 16px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 550;
     line-height: normal;
     list-style: none;
+    font-family: peyda-light;
 }
 
 .services img {
@@ -200,6 +205,7 @@
     justify-content: space-between;
     position: absolute;
     top: 45px;
+    font-family: peyda-medium;
 
 }
 
@@ -256,12 +262,14 @@
     margin: 65px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    font-family: peyda-thin;
 }
 .copyright p {
     color: var(--text-color-secondary-text-color-2, #7E8AAB);
     font-size: 14px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 200;
     line-height: normal;
     color: var(--text-color-secondary-text-color-2, #7E8AAB);
     font-size: 14px;

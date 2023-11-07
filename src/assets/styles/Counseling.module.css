@@ -2,13 +2,14 @@
     display: flex;
     justify-content: space-around;
     margin: auto;
+    margin-bottom: 200px;
 }
 
 .call {
     width: 376px;
     height: 587px;
     flex-shrink: 0;
-    margin: auto 0
+    margin: auto 0;
 }
 
 .info {
@@ -25,6 +26,7 @@
     flex-direction: row-reverse;
     margin-left: 275px;
     padding-top: 32px;
+
 }
 
 .title p {
@@ -35,6 +37,7 @@
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+    font-family: peyda-light;
 }
 
 .title h3 {
@@ -45,6 +48,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    font-family: peyda-medium;
 
 }
 
@@ -83,6 +87,7 @@
     border: #FFF;
     margin: auto;
     margin-bottom: 15px;
+    font-family: peyda-light;
 }
 
 .info input::placeholder {
@@ -94,6 +99,7 @@
     line-height: 24px;
     /* 141.176% */
     opacity: 0.6;
+    width:900px;
 }
 
 .subject {
@@ -134,6 +140,6 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-
+    font-family: peyda-medium;
 
 }

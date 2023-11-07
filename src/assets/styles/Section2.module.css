@@ -60,3 +60,28 @@
     transform: rotate(130deg);
     
 }
+.calculater:hover{
+    transition-duration: 200ms;
+    transform: scale(1.15);
+
+}
+.search:hover{
+    transition-duration: 200ms;
+    transform: scale(1.15);
+
+}
+.chat:hover{
+    transition-duration: 200ms;
+    transform: scale(1.15);
+
+}
+.managment:hover{
+    transition-duration: 200ms;
+    transform: scale(1.15);
+
+}
+.app:hover{
+    transition-duration: 200ms;
+    transform: scale(1.15);
+
+}

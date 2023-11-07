@@ -1,10 +1,16 @@
+.body{
+    margin:0 50px;
+
+}
 .ServiceContainer {
     display: flex;
     justify-content: space-around;
+    
 }
 
 .Item {
     width: 200px;
+    font-family: peyda-medium;
 }
 
 .Item img {
@@ -14,18 +20,17 @@
 }
 
 .Item p {
+    margin: 20px 0;
     color: #000;
     text-align: right;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin: 20px 0;
 }
 
 .container {
     overflow: hidden;
-    margin: 30px;
 }
 
 .text {
@@ -38,6 +43,7 @@
     font-weight: 300;
     line-height: 31.6px;
     /* 175.556% */
+font-family: peyda-light;
 }
 
 .title {
@@ -48,4 +54,15 @@
     font-weight: 800;
     line-height: normal;
     margin: 25px 0;
+    font-family: peyda-bold;
+}
+.Schat{
+    position: absolute;
+    top: 3950px;
+    right: 700px;
+}
+.vector{
+    position: absolute;
+    top: 3800px;
+    left: 300px;
 }
