@@ -5,6 +5,7 @@ import React from 'react';
 import Home from "./Home"
 import Login from "./assets/components/login/Index";
 import Otp from "./assets/components/login/Otp"
+import Password from './assets/components/login/Password';
 
 //styles
 
@@ -18,6 +19,7 @@ const App = () => {
         <Route index element={<Home/>} />
         <Route path='/login' element={<Login/>}/>
         <Route path='/login/otp' element={<Otp/>}/>
+        <Route path='/login/password' element={<Password/>}/>
         
     </Routes>
   );

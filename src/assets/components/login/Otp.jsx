@@ -4,16 +4,20 @@ import Image from "../../images/Login.png"
 import style from "../../styles/Login.module.css"
 import { Link } from 'react-router-dom';
 import OtpInput from 'react-otp-input';
+import { Formik } from 'formik';
+
 const Otp = () => {
     const [otp, setOtp] = useState('');
     return (
         <div className={style.container} >
-            <Navbar />
+            <Navbar/>
             <div className={style.login}>
-                <img className={style.image} src={Image} />
+                <img className={style.image} src={Image}/>
                 <div className={style.text}>
-                    <h1>ورود - ثبت نام</h1>
-                    <h3>کد چهار رقمی را وارد کنید</h3>
+                <h1 className={style.title}>ورود - ثبت نام</h1>
+                <h3 className={style.page}>رمز چهار رقمی را وارد کنید</h3>
+                
+
                     <OtpInput
                         containerStyle={style.input}
                         inputStyle={style.slot}
@@ -24,8 +28,8 @@ const Otp = () => {
                         renderInput={(props) => <input {...props} />}
                     />
 
-                    <Link to="otp" className={style.link}>
-                        <button>تایید کد</button>
+                    <Link  to={otp.length === 4 &&"/login/password"} replace className={style.link}>
+                        <button className={style.button}>تایید کد</button>
                     </Link>
                 </div>
             </div>
