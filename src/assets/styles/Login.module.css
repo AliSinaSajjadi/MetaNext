@@ -94,23 +94,31 @@
      text-decoration: none;
  }
 
- .input {}
 
  .slot {
+    margin: 8px;
+    font-size: larger;
+    font-family: peyda-medium;
+    color: #FFF;
      background-color: #0CA0A2;
      border: none;
      display: block;
      border-radius: 20px;
-     width: 70px !important;
+     width: 60px !important;
      height: 50px;
      border: none;
      border-bottom: solid white 3px;
      /* box-shadow: -10px 11px 8px 0px rgba(0, 0, 0, 0.1); */
  }
-
+.input{
+    margin-right: -40px;
+}
  .error {
      color: red;
      margin-top: 5px;
      font-family: peyda-thin;
 
+ }
+ .otpP{
+    margin-right: 60px;
  }

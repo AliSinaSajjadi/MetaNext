@@ -38,7 +38,6 @@ const Password = () => {
         handleBlur,
         handleSubmit,
         isSubmitting,
-        /* and other goodies */
       }) => (
         <form onSubmit={handleSubmit}>
           <input
@@ -51,7 +50,7 @@ const Password = () => {
           />
           <p className={style.error}>{errors.password && touched.password && errors.password}</p>
           
-          <Link className={style.link} to= {!errors.password && values.password && "otp"} >
+          <Link className={style.link} to= {!errors.password && values.password && "successfull" } replace = {true} >
                 <button type="submit" disabled={isSubmitting} className={style.button}>تایید رمز</button>
                 </Link>
         </form>
