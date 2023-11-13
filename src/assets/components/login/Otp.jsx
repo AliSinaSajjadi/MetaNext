@@ -32,7 +32,7 @@ const Otp = () => {
     }
 
     return (
-        <div className={style.container} >
+        <div className={style.container}  >
             <Navbar/>
             <div className={style.login}>
                 <img className={style.image} src={Image}/>

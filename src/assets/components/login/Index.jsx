@@ -10,30 +10,45 @@ import { useNavigate } from 'react-router-dom';
 const Login = () => {
   const Navigate = useNavigate();
   const [values, setValues] = useState("")
-  const [errors , setErrors] = useState("")
+  const [errors, setErrors] = useState("")
 
   const { data, refetch, isLoading, isSuccess, isError } =
     usePhoneNumberApi(values);
 
-  const changeHandler = e =>{
-    setValues(e.target.value) 
+  const changeHandler = e => {
+    setValues(e.target.value)
 
-  
+
   }
-  
-    
- 
-  useEffect (() =>{
-    if (isSuccess){
+  const validate = value => {
+    if (!value.trim()) {
+      setErrors("شماره را وارد کنید")
+    }
+    else if (!/^(\+98|0)?9\d{9}$/.test(value)) {
+      setErrors("شماره نادرست است")
+    }
+    else {
+      setErrors("")
+    }
+  }
+  useEffect(() => {
+    validate(values)
+    console.log(errors);
+  })
+
+
+
+  useEffect(() => {
+    if (isSuccess) {
       sessionStorage.setItem("secret", data.data.data.secret);
       Navigate("/login/otp")
     }
-  },[isSuccess])
-  
+  }, [isSuccess])
+
   const handleClick = () => {
-
-    refetch()
-
+    if (!errors) {
+      refetch()
+    }
   }
   return (
     <div className={style.container} >
@@ -46,7 +61,7 @@ const Login = () => {
           <Formik
             initialValues={{ number: '' }}
             validate={values => {
-             
+
             }}
 
           >
@@ -54,7 +69,6 @@ const Login = () => {
               touched,
               handleBlur,
               handleSubmit,
-              isSubmitting,
             }) => (
               <form onSubmit={handleSubmit}>
                 <input
@@ -62,16 +76,16 @@ const Login = () => {
                   className={style.number}
                   type="number"
                   name="number"
-                  onChange={() =>{changeHandler(event)}}
+                  onChange={() => { changeHandler(event) }}
                   onBlur={handleBlur}
                   value={values}
                 />
 
 
-                <p className={style.error}>{errors && errors}</p>
+                <p className={style.error}>{errors && touched.number && errors}</p>
 
 
-                <button onClick={() => handleClick()} className={style.button}>{isLoading? "درحال بارگیری ..." : "تایید کد" }</button>
+                <button onClick={() => handleClick()} className={style.button}>{isLoading ? "درحال بارگیری ..." : "تایید کد"}</button>
 
               </form>
             )}
