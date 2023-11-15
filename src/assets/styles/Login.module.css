@@ -10,9 +10,6 @@
      box-shadow: -10px 11px 8px 0px rgba(0, 0, 0, 0.1);
      border-radius: 60px;
      color: white;
-
-
-
  }
 
 
@@ -51,6 +48,8 @@
      height: 50px;
      border: none;
      box-shadow: -10px 11px 8px 0px rgba(0, 0, 0, 0.1);
+     box-sizing: border-box;
+     padding: 20px;
  }
 
  input[type=number]::-webkit-inner-spin-button,
@@ -59,10 +58,6 @@
      appearance: none;
  }
 
- /* Firefox */
- input[type=number] {
-     -moz-appearance: textfield;
- }
  input{
     direction: ltr;
  }
@@ -115,7 +110,8 @@
      /* box-shadow: -10px 11px 8px 0px rgba(0, 0, 0, 0.1); */
  }
 .input{
-    margin-right: -40px;
+    margin-left: 160px;
+    direction: ltr;
     
 }
  .error {

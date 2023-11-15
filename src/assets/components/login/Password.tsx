@@ -14,8 +14,6 @@ const Password: React.FC = () => {
     values: PasswordFormValues,
     { setSubmitting }: FormikHelpers<PasswordFormValues>
   ) => {
-    // Handle form submission logic here
-    console.log('Submitted values:', values);
     setSubmitting(false);
   };
 

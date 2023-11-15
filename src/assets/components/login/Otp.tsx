@@ -11,7 +11,7 @@ const Otp: React.FC = () => {
   const [errors, setErrors] = useState<string>("");
   const Navigate = useNavigate();
 
-  const { refetch, isLoading, isSuccess } =
+  const { refetch, isLoading, isSuccess , isError } =
     useOtpApi(otp);
 
   useEffect(() => {
@@ -21,12 +21,13 @@ const Otp: React.FC = () => {
   }, [otp, refetch]);
 
   useEffect(() => {
+    
     if (isSuccess) {
       Navigate("/login/password");
-    } else {
+    } else if(isError) {
       setErrors("خطایی رخ داد");
     }
-  }, [isSuccess, Navigate]);
+  }, [isSuccess , isError]);
 
   const handleClick = () => {
     refetch();
@@ -39,7 +40,7 @@ const Otp: React.FC = () => {
         <img className={style.image} src={Image} alt="Login" />
         <div className={style.text}>
           <h1 className={style.title}>ورود - ثبت نام</h1>
-          <h3 className={`${style.otpP} ${style.page}`}>رمز چهار رقمی را وارد کنید</h3>
+          <h3 className={`${style.otpP} ${style.page}`}>رمز پنج رقمی را وارد کنید</h3>
 
           <OtpInput
             shouldAutoFocus={true}

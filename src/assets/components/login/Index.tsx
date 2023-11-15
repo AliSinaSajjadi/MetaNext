@@ -2,23 +2,36 @@ import React, { useEffect, useState } from 'react';
 import Navbar from '../home/Navbar';
 import Image from "../../images/Login.png"
 import style from "../../styles/Login.module.css"
-// import { Navigate } from 'react-router-dom';
-import { Formik } from 'formik';
+import {
+  Formik,
+
+  Form,
+
+} from 'formik';
+
+
 import { usePhoneNumberApi } from "./PhoneAPI"
 import { useNavigate } from 'react-router-dom';
+
+
+interface initialValues{
+  number:string
+}
+
+const initialValues:initialValues={number:''}
 
 const Login: React.FC = () => {
   const Navigate = useNavigate();
   const [values, setValues] = useState<string>("");
   const [errors, setErrors] = useState<string>("");
 
-  const { data, refetch, isLoading, isSuccess, isError } =
+  const { data, refetch, isLoading, isSuccess } =
     usePhoneNumberApi(values);
 
-  const changeHandler = (event: React.ChangeEvent<HTMLInputElement> | undefined) => {
-    if (event) {
-      setValues(event.target.value);
-    }
+  const changeHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
+  
+      setValues(event.target.value)
+    
   }
 
 
@@ -34,7 +47,6 @@ const Login: React.FC = () => {
 
   useEffect(() => {
     validate(values);
-    console.log(errors);
   }, [values, errors]);
 
   useEffect(() => {
@@ -43,7 +55,7 @@ const Login: React.FC = () => {
       Navigate("/login/otp");
     }
   }, [isSuccess, data, Navigate]);
-
+  
   const handleClick = () => {
     if (!errors) {
       refetch();
@@ -59,30 +71,32 @@ const Login: React.FC = () => {
           <h1 className={style.title}>ورود - ثبت نام</h1>
           <h3 className={style.page}>شماره خود را وارد کنید</h3>
           <Formik
-            initialValues={{ number: '' }}
+            initialValues={initialValues}
+            onSubmit={()=>{ handleClick()}}
+
           >
             {({
               touched,
               handleBlur,
-              handleSubmit,
             }) => (
-              <form onSubmit={handleSubmit}>
+              <Form >
                 <input
                   autoFocus={true}
                   className={style.number}
                   type="number"
                   name="number"
-                  onChange={(event) => changeHandler(event as React.ChangeEvent<HTMLInputElement> | undefined)}
+                  onChange={(event) => changeHandler(event as React.ChangeEvent<HTMLInputElement> )}
                   onBlur={handleBlur}
                   value={values}
                 />
 
 
+
                 <p className={style.error}>{errors && touched.number && errors}</p>
 
-                <button onClick={() => handleClick()} className={style.button}>{isLoading ? "درحال بارگیری ..." : "تایید کد"}</button>
+                <button type='submit' className={style.button}>{isLoading ? "درحال بارگیری ..." : "تایید کد"}</button>
 
-              </form>
+              </Form>
             )}
           </Formik>
 
