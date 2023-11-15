@@ -3,7 +3,7 @@ import Navbar from '../home/Navbar';
 import Image from "../../images/green-check-mark-circular-validation-16213.png" 
 import style from "../../styles/Login.module.css"
 
-const Password = () => {
+const Successfull = () => {
     return (
         <div className={style.container} >
             <Navbar/>
@@ -21,4 +21,4 @@ const Password = () => {
     );
 };
 
-export default Password;
+export default Successfull;
